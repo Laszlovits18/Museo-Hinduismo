@@ -1,0 +1,216 @@
+{
+  "imagenes": [
+    {
+      "archivo": "assets/img/varanasi.jpg",
+      "titulo": "Varanasi Ganga Ghat",
+      "autor": "Dhirajpop",
+      "licencia": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Varanasi_Ganga_Ghat.jpg",
+      "licenciaUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modificaciones": "Recorte visual mediante CSS; archivo original sin modificar."
+    },
+    {
+      "archivo": "assets/img/holi.jpg",
+      "titulo": "Holi of India",
+      "autor": "Shraddhasinghuikey",
+      "licencia": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Holi_of_India.jpg",
+      "licenciaUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modificaciones": "Recorte visual mediante CSS; archivo original sin modificar."
+    },
+    {
+      "archivo": "assets/img/diwali.jpg",
+      "titulo": "Diwali Diya",
+      "autor": "dhondusaxena",
+      "licencia": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Diwali_Diya.jpg",
+      "licenciaUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "modificaciones": "Recorte visual mediante CSS; archivo original sin modificar."
+    },
+    {
+      "archivo": "assets/img/templo.jpg",
+      "titulo": "Brihadeeswara Temple Thanjavur",
+      "autor": "Surajmb",
+      "licencia": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Brihadeeswara_Temple_Thanjavur.jpg",
+      "licenciaUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modificaciones": "Se muestra con recorte visual mediante CSS o en un marco 3D; archivo descargado sin edición."
+    },
+    {
+      "archivo": "assets/img/rigveda.jpg",
+      "titulo": "Rigveda MS2097",
+      "autor": "Autor desconocido; manuscrito del siglo XIX",
+      "licencia": "Dominio público",
+      "url": "https://commons.wikimedia.org/wiki/File:Rigveda_MS2097.jpg",
+      "licenciaUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "modificaciones": "Se muestra con recorte visual mediante CSS o en un marco 3D; archivo descargado sin edición."
+    },
+    {
+      "archivo": "assets/img/gita.jpg",
+      "titulo": "Bhagavad Gita, a 19th century manuscript",
+      "autor": "Autor desconocido; Library of Congress",
+      "licencia": "Dominio público",
+      "url": "https://commons.wikimedia.org/wiki/File:Bhagavad_Gita,_a_19th_century_manuscript.jpg",
+      "licenciaUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "modificaciones": "Se muestra con recorte visual mediante CSS o en un marco 3D; archivo descargado sin edición."
+    },
+    {
+      "archivo": "assets/img/vishnu.jpg",
+      "titulo": "Vishnu, India, Khajuraho",
+      "autor": "Hiart",
+      "licencia": "Dominio público",
+      "url": "https://commons.wikimedia.org/wiki/File:Vishnu,_India,_Khajuraho,_State_of_Madhya_Pradesh,_11th_century,_red_sandstone,_Honolulu_Academy_of_Arts.jpg",
+      "licenciaUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "modificaciones": "Se muestra con recorte visual mediante CSS o en un marco 3D; archivo descargado sin edición."
+    },
+    {
+      "archivo": "assets/img/shiva.jpg",
+      "titulo": "Shiva as Lord of the Dance (Nataraja)",
+      "autor": "Art Institute of Chicago; artista original desconocido",
+      "licencia": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Shiva_as_Lord_of_the_Dance_(Nataraja).jpg",
+      "licenciaUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modificaciones": "Se muestra con recorte visual mediante CSS o en un marco 3D; archivo descargado sin edición."
+    },
+    {
+      "archivo": "assets/img/saraswati.jpg",
+      "titulo": "Saraswati by Raja Ravi Varma",
+      "autor": "Raja Ravi Varma",
+      "licencia": "Dominio público",
+      "url": "https://commons.wikimedia.org/wiki/File:Saraswati_by_Raja_Ravi_Varma.jpg",
+      "licenciaUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "modificaciones": "Se muestra con recorte visual mediante CSS o en un marco 3D; archivo descargado sin edición."
+    },
+    {
+      "archivo": "assets/img/navratri.jpg",
+      "titulo": "Navratri Garba Dancers",
+      "autor": "Saurabh sirohiya",
+      "licencia": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Navratri_Garba_Dancers.jpg",
+      "licenciaUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modificaciones": "Se muestra con recorte visual mediante CSS o en un marco 3D; archivo descargado sin edición."
+    },
+    {
+      "archivo": "assets/img/diaspora.jpg",
+      "titulo": "Hindu Temple of Tallahassee",
+      "autor": "The Bushranger",
+      "licencia": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Hindu_Temple_of_Tallahassee.jpg",
+      "licenciaUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modificaciones": "Se muestra con recorte visual mediante CSS o en un marco 3D; archivo descargado sin edición."
+    },
+    {
+      "archivo": "assets/img/aarti.jpg",
+      "titulo": "Varanasi aarti",
+      "autor": "Kaptured31",
+      "licencia": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Varanasi_aarti.jpg",
+      "licenciaUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modificaciones": "Se muestra con recorte visual mediante CSS o en un marco 3D; archivo descargado sin edición."
+    },
+    {
+      "archivo": "assets/img/catedral.jpg",
+      "titulo": "Interior de la catedral Metropolitana de la Ciudad de Mexico",
+      "autor": "Nan.P.182",
+      "licencia": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Interior_de_la_catedral_Metropolitana_de_la_Ciudad_de_Mexico.jpg",
+      "licenciaUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modificaciones": "Se muestra con recorte visual mediante CSS o en un marco 3D; archivo descargado sin edición."
+    },
+    {
+      "archivo": "assets/img/holi-grupo.jpg",
+      "titulo": "Holi celebration with colours and music",
+      "autor": "KESHAV nsr",
+      "licencia": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Holi_celebration_with_colours_and_music.jpg",
+      "licenciaUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modificaciones": "Se muestra con recorte visual mediante CSS o en un marco 3D; archivo descargado sin edición."
+    },
+    {
+      "archivo": "assets/img/vida-comunitaria.svg",
+      "titulo": "Vida comunitaria",
+      "autor": "Ilustración original creada para este museo",
+      "licencia": "Diseño original del proyecto",
+      "url": "assets/img/vida-comunitaria.svg",
+      "licenciaUrl": "assets/img/vida-comunitaria.svg",
+      "modificaciones": "Ilustración vectorial original; no reproduce las imágenes de referencia."
+    },
+    {
+      "archivo": "assets/img/dialogo.svg",
+      "titulo": "Dialogo",
+      "autor": "Ilustración original creada para este museo",
+      "licencia": "Diseño original del proyecto",
+      "url": "assets/img/dialogo.svg",
+      "licenciaUrl": "assets/img/dialogo.svg",
+      "modificaciones": "Ilustración vectorial original; no reproduce las imágenes de referencia."
+    },
+    {
+      "archivo": "assets/img/india-mundo.svg",
+      "titulo": "India mundo",
+      "autor": "Ilustración original creada para este museo",
+      "licencia": "Diseño original del proyecto",
+      "url": "assets/img/india-mundo.svg",
+      "licenciaUrl": "assets/img/india-mundo.svg",
+      "modificaciones": "Ilustración vectorial original; no reproduce las imágenes de referencia."
+    },
+    {
+      "archivo": "assets/img/antiguo-vivo.svg",
+      "titulo": "Antiguo vivo",
+      "autor": "Ilustración original creada para este museo",
+      "licencia": "Diseño original del proyecto",
+      "url": "assets/img/antiguo-vivo.svg",
+      "licenciaUrl": "assets/img/antiguo-vivo.svg",
+      "modificaciones": "Ilustración vectorial original; no reproduce las imágenes de referencia."
+    },
+    {
+      "archivo": "assets/img/bibliotecas.svg",
+      "titulo": "Bibliotecas",
+      "autor": "Ilustración original creada para este museo",
+      "licencia": "Diseño original del proyecto",
+      "url": "assets/img/bibliotecas.svg",
+      "licenciaUrl": "assets/img/bibliotecas.svg",
+      "modificaciones": "Ilustración vectorial original; no reproduce las imágenes de referencia."
+    },
+    {
+      "archivo": "assets/img/destinos.svg",
+      "titulo": "Destinos",
+      "autor": "Ilustración original creada para este museo",
+      "licencia": "Diseño original del proyecto",
+      "url": "assets/img/destinos.svg",
+      "licenciaUrl": "assets/img/destinos.svg",
+      "modificaciones": "Ilustración vectorial original; no reproduce las imágenes de referencia."
+    },
+    {
+      "archivo": "assets/img/plural.svg",
+      "titulo": "Plural",
+      "autor": "Ilustración original creada para este museo",
+      "licencia": "Diseño original del proyecto",
+      "url": "assets/img/plural.svg",
+      "licenciaUrl": "assets/img/plural.svg",
+      "modificaciones": "Ilustración vectorial original; no reproduce las imágenes de referencia."
+    }
+  ],
+  "texturas": [
+    {
+      "archivo": "assets/img/textura-piedra-exterior-v2.png",
+      "titulo": "Piedra envejecida de la fachada",
+      "autor": "Imagen generada con OpenAI para este museo",
+      "uso": "Textura original de la arquitectura 3D; no representa una obra histórica concreta.",
+      "prompt": "Use case: photorealistic-natural. Asset type: repeatable color texture for a lightweight Three.js 3D museum exterior wall. Primary request: a seamless tileable square diffuse albedo texture of weathered sandstone masonry typical of a historic museum building in western India. Fine natural limestone/sandstone grain, subtle warm gray and ochre mineral variation, faint age marks and patina, a few delicate horizontal stone joints, physically believable scale. Straight-on orthographic surface scan, evenly lit, no shadows, no perspective, no building, no windows, no objects, no text, no watermark. The left/right and top/bottom edges should match for tiling. High detail but low contrast so it reads as real stone from a distance."
+    },
+    {
+      "archivo": "assets/img/textura-yeso-interior-v2.png",
+      "titulo": "Yeso envejecido de las salas",
+      "autor": "Imagen generada con OpenAI para este museo",
+      "uso": "Textura original de las paredes interiores 3D.",
+      "prompt": "Use case: photorealistic-natural. Asset type: seamless diffuse albedo texture for interior walls of a walkable Three.js museum about Hinduism. Primary request: a square, seamlessly tileable close-up surface texture of aged deep terracotta and muted burgundy lime plaster, with subtle hand-troweled mineral variation, faint worn pigment and authentic historic Indian museum atmosphere. Straight-on orthographic flat surface scan, evenly lit without directional shadows. Restrained detail and low contrast so artworks and signage remain readable in front of it. No bricks, no architecture, no columns, no ornaments, no objects, no text, no watermark. Left/right and top/bottom edges must match for tiling."
+    },
+    {
+      "archivo": "assets/img/textura-suelo-piedra-v2.png",
+      "titulo": "Piedra clara del suelo",
+      "autor": "Imagen generada con OpenAI para este museo",
+      "uso": "Textura original del suelo interior y del sendero exterior 3D.",
+      "prompt": "Use case: photorealistic-natural. Asset type: seamless diffuse albedo texture for the walkable floor of a historic Indian museum in Three.js. Primary request: a square, tileable close-up of worn pale buff sandstone and warm gray limestone flooring, very subtle cream and taupe mineral veins, natural pores and age, physically plausible museum stone. No grout lines or separate slabs because the 3D scene already has tile joints. Straight-on orthographic flat surface scan, evenly lit without directional shadows. Low contrast and not yellow; quietly elegant. No architecture, no objects, no text, no watermark. Left/right and top/bottom edges should match for repeated tiling."
+    }
+  ]
+}

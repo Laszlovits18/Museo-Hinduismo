@@ -1,0 +1,71 @@
+{
+  "id": "actualidad",
+  "numeroSala": "04",
+  "titulo": "El hinduismo en el mundo actual",
+  "subtitulo": "Cultura, sociedad, economía y política",
+  "introduccion": "El hinduismo es una tradición viva y diversa. Sus prácticas viajan con las personas, cambian de contexto y participan en debates contemporáneos.",
+  "exhibiciones": [
+    {
+      "numero": 8,
+      "titulo": "Una tradición global",
+      "etiqueta": "Información adicional",
+      "resumen": "Casi 1.2 mil millones de personas se identificaban como hinduistas en 2020.",
+      "detalle": "Pew Research Center estima 1,178 millones de hinduistas en 2020: alrededor de 95 % vivía en India. También hay comunidades importantes en Nepal, Mauricio, Estados Unidos, Reino Unido y Emiratos Árabes Unidos. En la cultura se observan templos, literatura, música, festivales y prácticas de yoga, aunque el yoga contemporáneo tiene usos religiosos y seculares. En la economía, festivales como Diwali movilizan viajes y comercio; en la sociedad, comunidades y asociaciones sostienen actividades culturales y de ayuda. En política, la relación entre religión, nacionalismo y derechos de las minorías es objeto de debate. No hay una sola postura hinduista sobre estos asuntos.",
+      "fuente": "Pew Research Center, ‘Hindu population change’ (2025); The Pluralism Project, ‘Hinduism’ y ‘A Context for Diversity’."
+    }
+  ],
+  "ambitos": [
+    {
+      "nombre": "Cultura",
+      "dato": "Fiestas, música, relatos, templos y distintas formas de yoga."
+    },
+    {
+      "nombre": "Sociedad",
+      "dato": "Comunidades de la diáspora adaptan rituales y crean espacios de encuentro."
+    },
+    {
+      "nombre": "Economía",
+      "dato": "Las festividades impulsan actividad comercial y encuentros familiares."
+    },
+    {
+      "nombre": "Política",
+      "dato": "Debates sobre pluralismo, derechos y nacionalismo religioso."
+    }
+  ],
+  "quiz": {
+    "pregunta": "Según Pew, ¿dónde vivía la mayor parte de los hinduistas del mundo en 2020?",
+    "opciones": [
+      "India",
+      "Europa",
+      "América Latina"
+    ],
+    "correcta": 0,
+    "explicacion": "Pew estima que alrededor del 95 % vivía en India."
+  },
+  "galeria": [
+    {
+      "titulo": "Una comunidad fuera de India",
+      "imagen": "assets/img/diaspora.jpg",
+      "alt": "Exterior de un templo hinduista en Tallahassee, Estados Unidos.",
+      "descripcion": "Las comunidades hinduistas de la diáspora construyen templos y espacios culturales en muchos países. Adaptan horarios, lenguas y prácticas a nuevos contextos sin perder necesariamente sus tradiciones.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://pluralism.org/home-altar"
+    },
+    {
+      "titulo": "Una celebración viva",
+      "imagen": "assets/img/holi.jpg",
+      "alt": "Persona con el rostro y la ropa cubiertos de colores durante Holi.",
+      "descripcion": "Las fiestas aparecen hoy tanto en templos como en espacios públicos. Son también oportunidades de convivencia y transmisión cultural entre generaciones.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://pluralism.org/holi"
+    },
+    {
+      "titulo": "India y el mundo",
+      "imagen": "assets/img/india-mundo.svg",
+      "alt": "Ilustración original de un globo con conexiones entre comunidades.",
+      "descripcion": "Pew estimó casi 1.2 mil millones de hinduistas en 2020, con cerca del 95 % en India. La mayor concentración geográfica convive con comunidades internacionales activas.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://www.pewresearch.org/religion/2025/06/09/hindu-population-change/"
+    }
+  ]
+}

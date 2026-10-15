@@ -1,0 +1,54 @@
+{
+  "id": "final",
+  "numeroSala": "06",
+  "titulo": "Conclusiones y bibliografía",
+  "subtitulo": "Lo que nos llevamos de la visita",
+  "introduccion": "Llegamos al final del recorrido. Estas ideas quedan abiertas para debatir en clase.",
+  "exhibiciones": [
+    {
+      "numero": 10,
+      "titulo": "Conclusiones",
+      "etiqueta": "Del libro + información adicional",
+      "resumen": "Una tradición antigua y viva que no cabe en una sola definición.",
+      "detalle": "El hinduismo nació de procesos culturales largos, no de la enseñanza de un solo fundador. Reúne textos, filosofías, devociones y prácticas distintas. Karma, dharma, saṃsāra y moksha son conceptos importantes para comprender muchas de sus corrientes. Sus fiestas y comunidades muestran que continúa transformándose. Compararlo con el catolicismo permite reconocer diferencias reales y, a la vez, dialogar sobre preguntas humanas compartidas: cómo vivir, qué es lo sagrado y cuál es nuestro destino.",
+      "fuente": "Síntesis del Equipo 4 a partir de las fuentes de la bibliografía."
+    }
+  ],
+  "reflexion": "¿Cuál es la diferencia entre describir una creencia con respeto y afirmar que todas las personas de una tradición creen exactamente lo mismo?",
+  "quiz": {
+    "pregunta": "¿Cuál es la idea más fiel a lo aprendido?",
+    "opciones": [
+      "Todo el hinduismo tiene una sola autoridad",
+      "El hinduismo contiene tradiciones diversas",
+      "Todos los hinduistas viven igual"
+    ],
+    "correcta": 1,
+    "explicacion": "La diversidad histórica y actual es una característica importante."
+  },
+  "galeria": [
+    {
+      "titulo": "Una tradición plural",
+      "imagen": "assets/img/plural.svg",
+      "alt": "Ilustración original de una flor con pétalos de distintos colores.",
+      "descripcion": "No existe una sola forma de ser hinduista. La diversidad de textos, deidades, prácticas y filosofías es una idea central de la visita.",
+      "etiqueta": "Del libro + información adicional",
+      "fuente": "https://pluralism.org/hinduism-0"
+    },
+    {
+      "titulo": "Lo antiguo y lo vivo",
+      "imagen": "assets/img/antiguo-vivo.svg",
+      "alt": "Ilustración original de un libro abierto que combina escritura y una planta.",
+      "descripcion": "La larga historia del hinduismo llega hasta comunidades actuales de India y de otros países. Estudiar una tradición también exige escuchar cómo la viven hoy sus practicantes.",
+      "etiqueta": "Del libro + información adicional",
+      "fuente": "https://pluralism.org/hinduism-0"
+    },
+    {
+      "titulo": "Dialogar con respeto",
+      "imagen": "assets/img/dialogo.svg",
+      "alt": "Ilustración original de dos figuras simétricas reunidas por una flor.",
+      "descripcion": "Comparar religiones ayuda a formular preguntas sobre la vida, el deber, lo sagrado y el destino humano. Para hacerlo con respeto, hay que reconocer diferencias reales y evitar generalizaciones.",
+      "etiqueta": "Conclusión del Equipo 4",
+      "fuente": "https://pluralism.org/hinduism-0"
+    }
+  ]
+}

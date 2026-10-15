@@ -1,0 +1,57 @@
+{
+  "id": "vestibulo",
+  "numeroSala": "00",
+  "titulo": "Vestíbulo",
+  "subtitulo": "Una tradición, muchas formas de vivir lo sagrado",
+  "introduccion": "Bienvenido al museo del Equipo 4. Recorre las salas para descubrir la historia, los textos, las ideas y la vida actual del hinduismo. El mapa permite entrar a cualquier sala.",
+  "exhibiciones": [
+    {
+      "titulo": "¿Qué entendemos por religión?",
+      "etiqueta": "Del libro",
+      "resumen": "La religión es una relación personal y comunitaria con lo sagrado.",
+      "detalle": "El libro, siguiendo a Hans Küng, presenta la religión como un encuentro vivido con una realidad que supera al ser humano. Esa relación se expresa en una tradición y una comunidad mediante creencias, normas y ritos. Por eso no se reduce a una reflexión filosófica: también propone un mensaje y un camino de salvación."
+    },
+    {
+      "titulo": "Para mirar con atención",
+      "etiqueta": "Del libro",
+      "resumen": "Cuatro preguntas acompañan la visita.",
+      "detalle": "¿Qué distingue a la religión de la filosofía? ¿Qué pueden tener en común el hinduismo y el cristianismo? ¿Por qué atraen en Occidente algunas tradiciones orientales? ¿Qué lugar ocupa hoy la espiritualidad?"
+    }
+  ],
+  "quiz": {
+    "pregunta": "Según el libro, ¿la religión se vive solo de forma individual?",
+    "opciones": [
+      "Sí, siempre es privada",
+      "No, también se vive en comunidad",
+      "Solo pertenece a la filosofía"
+    ],
+    "correcta": 1,
+    "explicacion": "El libro señala una dimensión individual y otra social."
+  },
+  "galeria": [
+    {
+      "titulo": "La vida junto al Ganges",
+      "imagen": "assets/img/varanasi.jpg",
+      "alt": "Ghats de Varanasi iluminados por la noche.",
+      "descripcion": "La fotografía muestra Varanasi, una ciudad de gran importancia para distintas tradiciones hinduistas. El museo comienza aquí para recordar que una religión se vive también en lugares, comunidades y prácticas, no solo en libros.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://pluralism.org/hinduism-0"
+    },
+    {
+      "titulo": "Un patrimonio arquitectónico",
+      "imagen": "assets/img/templo.jpg",
+      "alt": "Vista exterior del templo Brihadeeswara de Thanjavur.",
+      "descripcion": "El templo Brihadeeswara de Thanjavur es un ejemplo de arquitectura religiosa del sur de India. El edificio virtual toma inspiración de materiales y ritmos arquitectónicos de templos históricos, sin pretender reproducir uno en particular.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://whc.unesco.org/en/list/250/"
+    },
+    {
+      "titulo": "Un rito en el presente",
+      "imagen": "assets/img/aarti.jpg",
+      "alt": "Personas durante una ceremonia de aarti en Varanasi.",
+      "descripcion": "La aarti es una ofrenda ritual de luz que puede realizarse en distintos espacios. La imagen permite observar que el hinduismo sigue expresándose en celebraciones y prácticas contemporáneas.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://pluralism.org/hinduism-0"
+    }
+  ]
+}

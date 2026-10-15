@@ -1,0 +1,148 @@
+{
+  "id": "sala-41",
+  "numeroSala": "01",
+  "titulo": "La más antigua de las religiones del mundo",
+  "subtitulo": "Origen, organización y textos sagrados",
+  "introduccion": "El hinduismo reúne tradiciones desarrolladas durante milenios en el sur de Asia. No tiene un único fundador ni una autoridad central para todas sus comunidades.",
+  "exhibiciones": [
+    {
+      "numero": 1,
+      "titulo": "Origen e historia",
+      "etiqueta": "Del libro",
+      "resumen": "Una tradición de larga historia, sin fundador conocido.",
+      "detalle": "El libro la presenta como la más antigua de las religiones existentes. Sitúa sus orígenes en la India antigua y menciona la llegada de pueblos pastoriles durante el segundo milenio a. C.; la investigación actual describe un proceso cultural complejo y evita atribuir su nacimiento a un solo pueblo. Puede clasificarse como religión de tradición cósmica: se relaciona con el orden del universo y no se organiza alrededor de un único libro revelado. Su finalidad incluye vivir conforme al dharma y alcanzar la liberación (moksha). La palabra indio indica procedencia de la India; hinduista indica pertenencia religiosa, con independencia de la nacionalidad.",
+      "fuente": "González-Carvajal Santabárbara (2019), pp. 180-181; The Pluralism Project, ‘Hinduism’."
+    },
+    {
+      "numero": 2,
+      "titulo": "Organización y sociedad",
+      "etiqueta": "Del libro",
+      "resumen": "No existe una iglesia única; históricamente, la sociedad se ordenó mediante varnas y jātis.",
+      "detalle": "Las cuatro varnas descritas en textos antiguos son brāhmaṇas (especialistas rituales), kṣatriyas (gobernantes y guerreros), vaiśyas (comerciantes y agricultores) y śūdras (trabajadores). Las jātis son numerosos grupos sociales concretos. Los dalits quedaron fuera de la jerarquía de varnas. Este esquema no describe por igual a toda persona hinduista ni justifica la discriminación. En India, la Constitución abolió la ‘intocabilidad’ en 1950; las desigualdades sociales no desaparecieron de inmediato.",
+      "fuente": "González-Carvajal Santabárbara (2019), p. 181; Constitución de la India, art. 17."
+    },
+    {
+      "numero": 3,
+      "titulo": "Textos sagrados",
+      "etiqueta": "Del libro",
+      "resumen": "Los Vedas y los Upaniṣads pertenecen a la śruti; las epopeyas, a la smṛti.",
+      "detalle": "Los cuatro Vedas son colecciones antiguas transmitidas oralmente. Los Upaniṣads exploran preguntas sobre Brahmán, el fundamento último de la realidad, y ātman, el yo profundo. La smṛti incluye las epopeyas Mahābhārata y Rāmāyaṇa. La Bhagavad Gītā forma parte del Mahābhārata y presenta el diálogo entre Krishna y Arjuna. No todos los hinduistas leen o interpretan estos textos de la misma manera.",
+      "fuente": "González-Carvajal Santabárbara (2019), p. 180; The Pluralism Project, ‘Hinduism’."
+    },
+    {
+      "titulo": "La divinidad: unidad y diversidad",
+      "etiqueta": "Del libro",
+      "resumen": "Las imágenes divinas son diversas; muchas corrientes las relacionan con una realidad última.",
+      "detalle": "El libro expone la Trimūrti: Brahmā, Viṣṇu y Śiva, asociados con creación, conservación y transformación. En la práctica, tienen especial importancia el culto a Viṣṇu, Śiva y la Diosa (Devī). Brahmán, la realidad absoluta, no debe confundirse con Brahmā, una deidad. Hablar simplemente de ‘treinta mil dioses’ o llamar politeísta a toda la tradición oculta su diversidad de interpretaciones.",
+      "fuente": "González-Carvajal Santabárbara (2019), p. 180; The Pluralism Project, ‘Many Gods and One’."
+    }
+  ],
+  "lineaTiempo": [
+    {
+      "fecha": "c. 1500 a. C.",
+      "texto": "Composición oral de himnos védicos en el sur de Asia."
+    },
+    {
+      "fecha": "c. 700–300 a. C.",
+      "texto": "Desarrollo de los principales Upaniṣads."
+    },
+    {
+      "fecha": "Antigüedad posterior",
+      "texto": "Circulación de las epopeyas y expansión de la devoción a distintas deidades."
+    },
+    {
+      "fecha": "Hoy",
+      "texto": "Tradiciones hinduistas en India y en comunidades de todo el mundo."
+    }
+  ],
+  "vedas": [
+    {
+      "nombre": "Ṛg Veda",
+      "dato": "Himnos dirigidos a divinidades."
+    },
+    {
+      "nombre": "Sāma Veda",
+      "dato": "Versos y melodías para el canto ritual."
+    },
+    {
+      "nombre": "Yajur Veda",
+      "dato": "Fórmulas utilizadas en sacrificios."
+    },
+    {
+      "nombre": "Atharva Veda",
+      "dato": "Himnos, plegarias y fórmulas rituales."
+    }
+  ],
+  "varnas": [
+    {
+      "nombre": "Brāhmaṇas",
+      "dato": "Especialistas rituales"
+    },
+    {
+      "nombre": "Kṣatriyas",
+      "dato": "Gobernantes y guerreros"
+    },
+    {
+      "nombre": "Vaiśyas",
+      "dato": "Comerciantes y agricultores"
+    },
+    {
+      "nombre": "Śūdras",
+      "dato": "Trabajadores"
+    },
+    {
+      "nombre": "Dalits",
+      "dato": "Fuera del esquema de varnas; la discriminación por ‘intocabilidad’ está prohibida"
+    }
+  ],
+  "trimurti": [
+    {
+      "nombre": "Brahmā",
+      "dato": "Creación"
+    },
+    {
+      "nombre": "Viṣṇu",
+      "dato": "Conservación"
+    },
+    {
+      "nombre": "Śiva",
+      "dato": "Transformación"
+    }
+  ],
+  "quiz": {
+    "pregunta": "¿Qué texto forma parte del Mahābhārata?",
+    "opciones": [
+      "Bhagavad Gītā",
+      "Ṛg Veda",
+      "Atharva Veda"
+    ],
+    "correcta": 0,
+    "explicacion": "La Bhagavad Gītā es un episodio del Mahābhārata."
+  },
+  "galeria": [
+    {
+      "titulo": "Un manuscrito del Ṛg Veda",
+      "imagen": "assets/img/rigveda.jpg",
+      "alt": "Página de un manuscrito del Ṛg Veda en escritura devanagari.",
+      "descripcion": "Esta copia es mucho más reciente que la composición de los himnos védicos. Los Vedas circularon durante siglos por transmisión oral antes de existir en manuscritos como el de la imagen. El Ṛg Veda reúne himnos dirigidos a diversas divinidades.",
+      "etiqueta": "Del libro",
+      "fuente": "https://pluralism.org/hinduism"
+    },
+    {
+      "titulo": "La Bhagavad Gītā",
+      "imagen": "assets/img/gita.jpg",
+      "alt": "Manuscrito ilustrado de la Bhagavad Gītā del siglo XIX.",
+      "descripcion": "La Bhagavad Gītā forma parte del Mahābhārata. En el diálogo entre Krishna y Arjuna aparecen preguntas sobre el deber, la acción y la vida espiritual. La imagen es de un manuscrito norteño del siglo XIX.",
+      "etiqueta": "Del libro",
+      "fuente": "https://pluralism.org/hinduism"
+    },
+    {
+      "titulo": "Viṣṇu en la escultura",
+      "imagen": "assets/img/vishnu.jpg",
+      "alt": "Escultura antigua de Viṣṇu en piedra rojiza.",
+      "descripcion": "Viṣṇu es una de las deidades de mayor importancia en muchas comunidades hinduistas. La escultura muestra cómo el arte ha dado formas visibles a ideas religiosas. La diversidad de imágenes no implica que todas las escuelas conciban la divinidad del mismo modo.",
+      "etiqueta": "Del libro",
+      "fuente": "https://pluralism.org/hinduism-0"
+    }
+  ]
+}

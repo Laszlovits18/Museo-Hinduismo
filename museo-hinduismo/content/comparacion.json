@@ -1,0 +1,80 @@
+{
+  "id": "comparacion",
+  "numeroSala": "05",
+  "titulo": "Hinduismo y catolicismo",
+  "subtitulo": "Diferencias para dialogar con respeto",
+  "introduccion": "La comparación resume ideas generales. Dentro del hinduismo hay muchas escuelas, y las personas de ambas tradiciones viven su fe de formas diversas.",
+  "exhibiciones": [
+    {
+      "numero": 9,
+      "titulo": "Cinco puntos de comparación",
+      "etiqueta": "Información adicional",
+      "resumen": "Origen, idea de Dios, destino humano, vida moral y textos se entienden de maneras distintas.",
+      "detalle": "El hinduismo no tiene un fundador único; el cristianismo católico se centra en Jesucristo. Las corrientes hinduistas pueden hablar de Brahmán y venerar diversas deidades; el catolicismo confiesa un solo Dios en tres personas. Muchas corrientes hinduistas enseñan saṃsāra y moksha; el catolicismo afirma una vida humana y la resurrección final. Karma y dharma ayudan a pensar las consecuencias y los deberes; el catolicismo habla de pecado, gracia y salvación en Cristo. El hinduismo reúne una biblioteca amplia sin una sola autoridad central; el catolicismo reconoce la Biblia, la Tradición y el magisterio de la Iglesia.",
+      "fuente": "The Pluralism Project, ‘Hinduism’; Catecismo de la Iglesia Católica, arts. 11 y 12; Compendio del Catecismo."
+    }
+  ],
+  "comparaciones": [
+    {
+      "tema": "Origen",
+      "hinduismo": "Sin fundador único conocido",
+      "catolicismo": "Jesucristo es central"
+    },
+    {
+      "tema": "Dios y lo divino",
+      "hinduismo": "Brahmán y diversas deidades según la escuela",
+      "catolicismo": "Un solo Dios: Padre, Hijo y Espíritu Santo"
+    },
+    {
+      "tema": "Después de la muerte",
+      "hinduismo": "Saṃsāra y búsqueda de moksha en muchas escuelas",
+      "catolicismo": "Una vida terrena, juicio y resurrección"
+    },
+    {
+      "tema": "Vida moral",
+      "hinduismo": "Dharma, karma y caminos de liberación",
+      "catolicismo": "Seguimiento de Cristo, gracia y mandamientos"
+    },
+    {
+      "tema": "Autoridad y textos",
+      "hinduismo": "Diversos textos, escuelas y maestros",
+      "catolicismo": "Biblia, Tradición y magisterio"
+    }
+  ],
+  "quiz": {
+    "pregunta": "¿Qué enseña el catolicismo sobre el destino final del cuerpo?",
+    "opciones": [
+      "Una serie de reencarnaciones",
+      "La resurrección",
+      "Ninguna continuidad"
+    ],
+    "correcta": 1,
+    "explicacion": "El Catecismo afirma la resurrección de los muertos."
+  },
+  "galeria": [
+    {
+      "titulo": "Dos bibliotecas religiosas",
+      "imagen": "assets/img/bibliotecas.svg",
+      "alt": "Ilustración original de dos libros abiertos.",
+      "descripcion": "La Bhagavad Gītā es relevante para muchas corrientes hinduistas, dentro de una biblioteca religiosa extensa. El catolicismo reconoce la Biblia como Escritura y la interpreta dentro de la Tradición de la Iglesia.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://www.vatican.va/archive/catechism_sp/index_sp.html"
+    },
+    {
+      "titulo": "Un espacio católico",
+      "imagen": "assets/img/catedral.jpg",
+      "alt": "Interior de la Catedral Metropolitana de la Ciudad de México.",
+      "descripcion": "El catolicismo se organiza en una Iglesia con obispos, sacramentos y una autoridad doctrinal compartida. El hinduismo reúne comunidades, maestros y escuelas diversas, sin una estructura única equivalente.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://www.vatican.va/archive/catechism_sp/index_sp.html"
+    },
+    {
+      "titulo": "Muerte y destino",
+      "imagen": "assets/img/destinos.svg",
+      "alt": "Ilustración original de un ciclo y un sol como símbolos de dos visiones del destino.",
+      "descripcion": "Muchas tradiciones hinduistas hablan de saṃsāra y moksha. El catolicismo, en cambio, afirma la resurrección final de los muertos. Esta comparación no reduce ninguna religión a una sola imagen.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://www.vatican.va/archive/catechism_sp/p123a11_sp.html"
+    }
+  ]
+}

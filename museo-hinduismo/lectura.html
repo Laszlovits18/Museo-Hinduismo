@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7e2521">
+  <meta name="description" content="Museo virtual interactivo del Equipo 4 sobre el hinduismo para Formación humana.">
+  <title>Museo del hinduismo · Equipo 4</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237e2521'/%3E%3Cpath d='M32 9c-8 12-16 18-16 29a16 16 0 0032 0C48 27 40 21 32 9zm0 17c4 6 7 10 7 15a7 7 0 01-14 0c0-5 3-9 7-15z' fill='%23e9b85f'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    window.museoOfflineReady = location.protocol === "file:" ? new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = "js/offline-data.js";
+      script.onload = resolve;
+      script.onerror = () => reject(new Error("No se pudo abrir el contenido sin conexión."));
+      document.head.append(script);
+    }) : Promise.resolve();
+  </script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="topline"></div>
+  <header class="site-header">
+    <a class="brand" href="#vestibulo" aria-label="Ir al vestíbulo"><span class="brand-mark" aria-hidden="true">✦</span><span>MUSEO <small>HINDUISMO</small></span></a>
+    <span class="course">FORMACIÓN HUMANA <span aria-hidden="true">·</span> EQUIPO 4</span>
+    <a class="mode-link" href="index.html">Explorar en 3D</a>
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">Salas <span aria-hidden="true">☰</span></button>
+  </header>
+  <div class="layout">
+    <aside id="sidebar" class="sidebar" aria-label="Navegación de salas">
+      <div class="side-intro"><span class="eyebrow">RECORRIDO</span><strong>Explora el museo</strong><p>7 salas · 10 preguntas guía</p></div>
+      <nav id="room-nav" aria-label="Salas del museo"></nav>
+      <div class="side-footer"><span>Tu avance</span><strong id="progress-text">0 de 7 salas</strong><div class="progress-track" role="progressbar" aria-label="Progreso del recorrido" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0" id="progress-bar"><span></span></div></div>
+    </aside>
+    <main id="contenido" tabindex="-1"><div id="app" aria-live="polite"><p class="loading">Preparando el museo…</p></div></main>
+  </div>
+  <footer class="site-footer">Museo virtual · Formación humana · Equipo 4 <span>Aprender, comparar y dialogar con respeto.</span></footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{
+  "id": "fiestas",
+  "numeroSala": "03",
+  "titulo": "Fiestas y celebraciones",
+  "subtitulo": "Luz, color y devoción",
+  "introduccion": "Las celebraciones cambian según la región, la familia y la tradición religiosa. Estas son cuatro muestras, no un calendario único para todo el hinduismo.",
+  "exhibiciones": [
+    {
+      "numero": 4,
+      "titulo": "¿Qué y cómo se celebra?",
+      "etiqueta": "Información adicional",
+      "resumen": "Las fiestas unen relatos religiosos, rituales, arte y vida comunitaria.",
+      "detalle": "Diwali celebra la luz y se asocia, entre otras tradiciones, con Lakshmi; se encienden lámparas, se decoran hogares y se comparten alimentos. Holi anuncia la primavera y se celebra con polvos de colores. Navratri dedica nueve noches a la Diosa y puede incluir danza, canto y oración. Maha Shivaratri honra a Śiva con vigilias y plegarias. Sus formas concretas varían por región.",
+      "fuente": "Smithsonian National Museum of Asian Art, ‘Diwali’ y ‘Navaratri’; The Pluralism Project, ‘Holi’."
+    }
+  ],
+  "fiestas": [
+    {
+      "nombre": "Diwali",
+      "simbolo": "Luz",
+      "dato": "Lámparas, visitas y celebraciones familiares; en muchas comunidades se honra a Lakshmi.",
+      "fuente": "https://asia.si.edu/whats-on/events/celebrations/diwali/"
+    },
+    {
+      "nombre": "Holi",
+      "simbolo": "Color",
+      "dato": "Fiesta de primavera con polvos de colores y encuentros comunitarios.",
+      "fuente": "https://pluralism.org/holi"
+    },
+    {
+      "nombre": "Navratri",
+      "simbolo": "Nueve noches",
+      "dato": "Celebración de la Diosa; en algunas regiones incluye cantos y danza.",
+      "fuente": "https://asia.si.edu/glossary/navaratri/"
+    },
+    {
+      "nombre": "Maha Shivaratri",
+      "simbolo": "Vigilia",
+      "dato": "Noche dedicada a Śiva con ayuno, oración y vigilia en algunas comunidades.",
+      "fuente": "https://pluralism.org/shiva-ratri"
+    }
+  ],
+  "quiz": {
+    "pregunta": "¿Qué fiesta suele incluir polvos de colores?",
+    "opciones": [
+      "Navratri",
+      "Holi",
+      "Maha Shivaratri"
+    ],
+    "correcta": 1,
+    "explicacion": "Holi es una celebración de primavera conocida por sus colores."
+  },
+  "galeria": [
+    {
+      "titulo": "Diwali: lámparas y reunión",
+      "imagen": "assets/img/diwali.jpg",
+      "alt": "Lámparas de aceite encendidas durante Diwali.",
+      "descripcion": "Diwali es una fiesta de la luz. En muchas comunidades se encienden pequeñas lámparas y se visita a familiares. Sus relatos y costumbres cambian por región; en varias tradiciones se honra a Lakshmi.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://asia.si.edu/whats-on/events/celebrations/diwali/"
+    },
+    {
+      "titulo": "Holi: el color de la primavera",
+      "imagen": "assets/img/holi-grupo.jpg",
+      "alt": "Grupo de personas con colores durante Holi.",
+      "descripcion": "Holi es una fiesta de primavera conocida por el uso de polvos de colores. También reúne canto, encuentros y relatos religiosos diferentes según la región.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://pluralism.org/holi"
+    },
+    {
+      "titulo": "Navratri: nueve noches",
+      "imagen": "assets/img/navratri.jpg",
+      "alt": "Personas bailando garba durante una celebración de Navratri.",
+      "descripcion": "Navratri celebra durante nueve noches a la Diosa en diversas formas. La danza garba es una de las maneras regionales de festejar, especialmente asociada con Gujarat.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://asia.si.edu/glossary/navaratri/"
+    }
+  ]
+}

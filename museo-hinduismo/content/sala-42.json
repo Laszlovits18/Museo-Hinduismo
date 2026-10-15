@@ -1,0 +1,93 @@
+{
+  "id": "sala-42",
+  "numeroSala": "02",
+  "titulo": "Visión hinduista del más allá y más acá",
+  "subtitulo": "Doctrina, moral y después de la muerte",
+  "introduccion": "Karma, dharma, saṃsāra y moksha ayudan a entender cómo distintas corrientes hinduistas piensan la acción humana y su destino.",
+  "exhibiciones": [
+    {
+      "numero": 5,
+      "titulo": "Doctrina",
+      "etiqueta": "Del libro",
+      "resumen": "El karma conecta la acción con sus consecuencias; Brahmán nombra la realidad absoluta.",
+      "detalle": "Karma significa ‘acción’. Las acciones tienen consecuencias que pueden trascender la vida presente. Ātman designa el yo profundo en muchas escuelas. El libro relaciona estas ideas con Brahmán, fundamento último de la realidad. No hay una lista única de artículos de fe compartida por todas las corrientes hinduistas: existen distintas filosofías y formas de devoción. Es importante distinguir entre doctrina religiosa y una explicación verificable científicamente.",
+      "fuente": "González-Carvajal Santabárbara (2019), p. 181; The Pluralism Project, ‘Hinduism’."
+    },
+    {
+      "numero": 6,
+      "titulo": "Moral y vida cotidiana",
+      "etiqueta": "Del libro",
+      "resumen": "Dharma nombra deberes y formas de actuar; no es un código idéntico para todos.",
+      "detalle": "El libro menciona los fines de la vida: dharma (deber y orden), artha (bienestar material), kāma (placer) y moksha (liberación). Presenta cuatro āśramas, o etapas ideales de la vida: estudiante, vida de hogar, retiro y renuncia. Ese modelo clásico se aplicó especialmente a varones de grupos privilegiados; no representa por igual la experiencia de las mujeres ni de todas las comunidades. Las consecuencias del karma no deben usarse para culpar a las personas por el sufrimiento o la desigualdad.",
+      "fuente": "González-Carvajal Santabárbara (2019), p. 181."
+    },
+    {
+      "numero": 7,
+      "titulo": "Después de la muerte",
+      "etiqueta": "Del libro",
+      "resumen": "Saṃsāra es el ciclo de renacimientos; moksha, la liberación de ese ciclo.",
+      "detalle": "Según muchas corrientes hinduistas, el ātman atraviesa nacimientos sucesivos. Las consecuencias de las acciones influyen en esa trayectoria. La meta última es moksha: dejar atrás el ciclo de saṃsāra. Las escuelas explican de modos distintos cómo se alcanza, por ejemplo mediante conocimiento, devoción, acción desinteresada o disciplina espiritual. El libro resalta la experiencia mística de descubrir la relación entre ātman y lo divino.",
+      "fuente": "González-Carvajal Santabárbara (2019), p. 181; The Pluralism Project, ‘Hinduism’."
+    }
+  ],
+  "ashramas": [
+    {
+      "nombre": "Brahmacharya",
+      "dato": "Aprendizaje"
+    },
+    {
+      "nombre": "Gṛhastha",
+      "dato": "Vida de hogar"
+    },
+    {
+      "nombre": "Vānaprastha",
+      "dato": "Retiro gradual"
+    },
+    {
+      "nombre": "Sannyāsa",
+      "dato": "Renuncia"
+    }
+  ],
+  "ciclo": [
+    "Acción (karma)",
+    "Consecuencias",
+    "Renacimiento (saṃsāra)",
+    "Liberación (moksha)"
+  ],
+  "quiz": {
+    "pregunta": "¿Cómo se llama la liberación del ciclo de renacimientos?",
+    "opciones": [
+      "Artha",
+      "Moksha",
+      "Jāti"
+    ],
+    "correcta": 1,
+    "explicacion": "Moksha es la liberación; saṃsāra es el ciclo."
+  },
+  "galeria": [
+    {
+      "titulo": "Śiva como Nataraja",
+      "imagen": "assets/img/shiva.jpg",
+      "alt": "Escultura de Śiva danzante dentro de un círculo.",
+      "descripcion": "Esta imagen de Śiva como señor de la danza se asocia con transformación y renovación. En el museo ayuda a pensar los ciclos, pero no representa por sí sola toda la doctrina sobre saṃsāra o moksha.",
+      "etiqueta": "Información adicional",
+      "fuente": "https://www.artic.edu/artworks/24548/shiva-as-lord-of-the-dance-nataraja"
+    },
+    {
+      "titulo": "Sarasvatī y el conocimiento",
+      "imagen": "assets/img/saraswati.jpg",
+      "alt": "Pintura de Sarasvatī con instrumento musical.",
+      "descripcion": "Sarasvatī se vincula con el aprendizaje y las artes. Su presencia recuerda que las vías de vida religiosa pueden incluir estudio, devoción, acción y práctica espiritual; no existe una única experiencia para todos los hinduistas.",
+      "etiqueta": "Del libro",
+      "fuente": "https://pluralism.org/hinduism-0"
+    },
+    {
+      "titulo": "La práctica comunitaria",
+      "imagen": "assets/img/vida-comunitaria.svg",
+      "alt": "Ilustración original de tres personas reunidas alrededor de una lámpara.",
+      "descripcion": "Dharma se suele traducir como deber u orden, aunque su sentido depende del contexto. La vida cotidiana puede integrar responsabilidades familiares, actividades sociales y rituales, además de la búsqueda espiritual.",
+      "etiqueta": "Del libro",
+      "fuente": "https://pluralism.org/hinduism-0"
+    }
+  ]
+}

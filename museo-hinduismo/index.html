@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#251813">
+  <meta name="description" content="Camina por un museo virtual 3D sobre el hinduismo. Explora siete salas, imágenes, textos y preguntas interactivas.">
+  <title>Museo 3D del hinduismo · Equipo 4</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237e2521'/%3E%3Cpath d='M32 9c-8 12-16 18-16 29a16 16 0 0032 0C48 27 40 21 32 9zm0 17c4 6 7 10 7 15a7 7 0 01-14 0c0-5 3-9 7-15z' fill='%23e9b85f'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/museo3d.css">
+  <script>
+    window.museoOfflineReady = location.protocol === "file:" ? new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = "js/offline-data.js";
+      script.onload = resolve;
+      script.onerror = () => reject(new Error("No se pudo abrir el contenido sin conexión."));
+      document.head.append(script);
+    }) : Promise.resolve();
+  </script>
+  <script defer src="js/vendor/three.global.js"></script>
+  <script defer src="js/museo3d.js"></script>
+</head>
+<body>
+  <main id="museo" aria-label="Museo virtual tridimensional">
+    <canvas id="scene" tabindex="0" aria-label="Vista tridimensional del museo. Usa W, A, S y D para caminar; arrastra o usa J y L para girar la cámara."></canvas>
+    <header class="hud-top">
+      <a class="brand" href="index.html" aria-label="Inicio del museo"><span class="brand-icon" aria-hidden="true">✦</span><span>MUSEO <small>HINDUISMO</small></span></a>
+      <div class="hud-actions"><span class="course">FORMACIÓN HUMANA · EQUIPO 4</span><a class="text-link" href="lectura.html">Modo lectura</a><button id="map-button" type="button" aria-haspopup="dialog">Mapa de salas</button></div>
+    </header>
+    <div class="hud-bottom"><div><span class="hud-label">RECORRIDO</span><strong id="room-label">Jardín de entrada</strong></div><div class="visit-status"><span id="visit-label">0 / 7 salas visitadas</span><div class="visit-track"><span id="visit-fill"></span></div></div></div>
+    <div id="crosshair" aria-hidden="true"></div>
+    <div id="interact-hint" class="interact-hint" hidden><kbd>E</kbd><span id="interact-title">Ver pieza</span></div>
+    <p class="walk-hint">W A S D para caminar · arrastra o usa J / L para mirar · E para explorar</p>
+    <div id="touch-controls" class="touch-controls" aria-label="Controles táctiles"><div id="joystick" class="joystick" aria-label="Desplazamiento"><span id="joystick-knob"></span></div><span>Desliza a la derecha para mirar</span><button id="touch-interact" type="button" aria-label="Explorar pieza cercana">Explorar</button></div>
+    <section id="welcome" class="welcome" aria-labelledby="welcome-title"><div class="welcome-card"><span class="overline">EXPERIENCIA 3D · EQUIPO 4</span><h1 id="welcome-title">Un museo para recorrer el hinduismo</h1><p>La visita empieza en el jardín exterior. Entra por la puerta central y recorre siete salas para descubrir imágenes, relatos y las diez preguntas guía.</p><div class="welcome-actions"><button id="enter-button" class="primary" type="button">Empezar la visita</button><a href="lectura.html">Leer sin 3D</a></div><p class="controls-note"><strong>Computadora:</strong> W A S D o flechas para caminar; arrastra sobre la escena o usa J / L para girar la cámara; I / K para mirar arriba o abajo; E o clic para abrir una pieza. <strong>Celular:</strong> control izquierdo para caminar y deslizar a la derecha para mirar.</p></div></section>
+    <section id="map-overlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="map-title" hidden><div class="overlay-card map-card"><button class="close" data-close="map" aria-label="Cerrar mapa" type="button">×</button><span class="overline">PLANO DEL RECORRIDO</span><h2 id="map-title">Elige una sala</h2><p>Puedes recorrer el edificio a pie o saltar a una sala desde aquí.</p><div id="map-grid" class="map-grid"></div></div></section>
+    <section id="detail-overlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="detail-title" hidden><div class="overlay-card detail-card"><button class="close" data-close="detail" aria-label="Cerrar exhibición" type="button">×</button><div id="detail-content"></div><button id="back-to-museum" class="primary back-button" type="button">Volver al museo</button></div></section>
+    <section id="error-overlay" class="overlay" role="alertdialog" aria-modal="true" aria-labelledby="error-title" hidden><div class="overlay-card"><h2 id="error-title">No se pudo iniciar la visita 3D</h2><p id="error-message">Tu navegador puede no tener disponible WebGL.</p><a class="primary link-button" href="lectura.html">Abrir el museo en modo lectura</a></div></section>
+  </main>
+</body>
+</html>

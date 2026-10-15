@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1400" height="1000" viewBox="0 0 1400 1000" role="img" aria-label="Dos tradiciones de escritura">
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#3c2144"/><stop offset="1" stop-color="#864056"/></linearGradient>
+<pattern id="border" width="96" height="96" patternUnits="userSpaceOnUse"><path d="M48 7C65 24 65 43 48 51C31 43 31 24 48 7ZM7 48C24 31 43 31 51 48C43 65 24 65 7 48ZM89 48C72 31 53 31 45 48C53 65 72 65 89 48ZM48 89C65 72 65 53 48 45C31 53 31 72 48 89Z" fill="none" stroke="#e9b758" stroke-width="2" opacity=".8"/><circle cx="48" cy="48" r="9" fill="#e9b758"/></pattern>
+<g id="lotus" fill="none" stroke="#f0c274" stroke-width="7"><ellipse cx="0" cy="-44" rx="24" ry="54"/><ellipse cx="-38" cy="-20" rx="24" ry="54" transform="rotate(-50 -38 -20)"/><ellipse cx="38" cy="-20" rx="24" ry="54" transform="rotate(50 38 -20)"/><path d="M-95 30Q0 90 95 30"/></g>
+</defs>
+<rect width="1400" height="1000" fill="url(#bg)"/><rect x="20" y="20" width="1360" height="960" fill="none" stroke="#e7b75d" stroke-width="16"/><rect x="46" y="46" width="1308" height="908" fill="none" stroke="#f5d99a" stroke-width="3"/>
+<rect x="60" y="60" width="1280" height="120" fill="url(#border)" opacity=".35"/><rect x="60" y="820" width="1280" height="120" fill="url(#border)" opacity=".35"/>
+<g opacity=".34"><use xlink:href="#lotus" transform="translate(140 500) scale(.8)"/><use xlink:href="#lotus" transform="translate(1260 500) scale(.8)"/></g>
+<path d="M210 370Q450 260 684 375V690Q447 585 210 690Z" fill="#f3dbac" stroke="#e8b660" stroke-width="16"/><path d="M716 375Q950 260 1190 370V690Q953 585 716 690Z" fill="#e4c99a" stroke="#e8b660" stroke-width="16"/><path d="M700 365V710" stroke="#efc576" stroke-width="16"/>
+<g fill="none" stroke="#975b58" stroke-width="7"><path d="M280 426Q450 374 610 432M280 481Q450 429 610 487M280 536Q450 484 610 542M790 432Q950 374 1120 426M790 487Q950 429 1120 481M790 542Q950 484 1120 536"/></g><use xlink:href="#lotus" transform="translate(700 235) scale(.6)"/>
+</svg>
