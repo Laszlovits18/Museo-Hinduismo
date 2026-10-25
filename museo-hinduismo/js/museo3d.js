@@ -14,24 +14,85 @@ const $ = id => document.getElementById(id);
 const canvas = $("scene");
 const isTouch = matchMedia("(pointer: coarse)").matches;
 const scene = new THREE.Scene();
-function skyTexture() {
-  const canvas=document.createElement("canvas");canvas.width=1024;canvas.height=512;
-  const ctx=canvas.getContext("2d");
-  const sky=ctx.createLinearGradient(0,0,0,512);
-  sky.addColorStop(0,"#4f82ad");sky.addColorStop(.52,"#8cb7d0");sky.addColorStop(.83,"#c6d1ce");sky.addColorStop(1,"#e0d8c6");
-  ctx.fillStyle=sky;ctx.fillRect(0,0,1024,512);
-  for(const [x,y,w] of [[130,180,220],[570,115,180],[840,245,250]]) {
-    const haze=ctx.createRadialGradient(x,y,5,x,y,w);
-    haze.addColorStop(0,"rgba(255,255,255,.17)");haze.addColorStop(1,"rgba(255,255,255,0)");
-    ctx.fillStyle=haze;ctx.fillRect(x-w,y-w,w*2,w*2);
-  }
-  const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;return texture;
-}
-scene.background = skyTexture();
-scene.fog = new THREE.FogExp2(0xb9c6c1, 0.005);
+// El cielo sigue a la cámara: siempre queda detrás del edificio y no limita el paseo.
+// Las nubes se calculan en el shader; solo cambia el tiempo, sin recrear texturas por cuadro.
+scene.background = new THREE.Color(0xe5a682);
+scene.fog = new THREE.FogExp2(0xdcb090, 0.004);
 const camera = new THREE.PerspectiveCamera(70, innerWidth / innerHeight, 0.05, 150);
 camera.rotation.order = "YXZ";
 camera.position.set(0, 1.65, 52);
+const skyUniforms = { uTime: { value: 0 } };
+const sky = new THREE.Mesh(
+  new THREE.SphereGeometry(115, 40, 24),
+  new THREE.ShaderMaterial({
+    side: THREE.BackSide,
+    depthWrite: false,
+    fog: false,
+    uniforms: skyUniforms,
+    vertexShader: `
+      varying vec3 vDirection;
+      void main() {
+        vDirection = normalize(position);
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+      }
+    `,
+    fragmentShader: `
+      precision mediump float;
+      varying vec3 vDirection;
+      uniform float uTime;
+
+      float hash(vec2 p) {
+        return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+      }
+      float noise(vec2 p) {
+        vec2 i = floor(p), f = fract(p);
+        f = f * f * (3.0 - 2.0 * f);
+        return mix(mix(hash(i), hash(i + vec2(1.0, 0.0)), f.x),
+                   mix(hash(i + vec2(0.0, 1.0)), hash(i + 1.0), f.x), f.y);
+      }
+      float clouds(vec2 p) {
+        return noise(p) * 0.57 + noise(p * 2.12) * 0.29
+             + noise(p * 4.31) * 0.14;
+      }
+      void main() {
+        vec3 dir = normalize(vDirection);
+        float height = dir.y;
+        // Malva arriba, rosa suave en medio y ámbar intenso junto al horizonte.
+        vec3 color = mix(vec3(0.99, 0.61, 0.35), vec3(0.94, 0.59, 0.53),
+                         smoothstep(-0.05, 0.36, height));
+        color = mix(color, vec3(0.45, 0.43, 0.58), smoothstep(0.30, 0.98, height));
+        color += vec3(0.24, 0.14, 0.07) * (1.0 - smoothstep(-0.08, 0.25, height));
+
+        vec3 sunDirection = normalize(vec3(0.56, 0.12, -0.82));
+        float towardSun = max(dot(dir, sunDirection), 0.0);
+        color += vec3(1.0, 0.52, 0.16) * pow(towardSun, 15.0) * 0.25;
+        color += vec3(1.0, 0.70, 0.32) * pow(towardSun, 95.0) * 0.37;
+
+        // Coordenadas angulares: las nubes permanecen en el cielo al girar la cámara.
+        float azimuth = atan(dir.z, dir.x);
+        vec2 wind = vec2(uTime * 0.018, uTime * 0.002);
+        vec2 p = vec2(azimuth * 3.2, height * 8.0) + wind;
+        float shape = clouds(p) * 0.78 + clouds(p * 1.75 + vec2(17.3, 4.2)) * 0.22;
+        float cover = smoothstep(0.49, 0.64, shape);
+        cover *= smoothstep(-0.02, 0.14, height) * (1.0 - smoothstep(0.76, 1.0, height));
+        float lit = pow(towardSun, 5.0);
+        vec3 cloudShadow = mix(vec3(0.72, 0.49, 0.55), vec3(0.91, 0.55, 0.39), lit);
+        vec3 cloudHighlight = mix(vec3(1.0, 0.77, 0.59), vec3(1.0, 0.88, 0.57), lit);
+        float detail = noise(p * 3.1 + vec2(8.0, -2.0));
+        vec3 cloudColor = mix(cloudShadow, cloudHighlight, smoothstep(0.25, 0.82, detail));
+        color = mix(color, cloudColor, cover * 0.88);
+
+        // El sol queda visible en el lado derecho de la fachada.
+        float disc = smoothstep(0.99935, 0.99972, towardSun);
+        color = mix(color, vec3(1.0, 0.93, 0.70), disc * (1.0 - cover * 0.35));
+        gl_FragColor = vec4(color, 1.0);
+      }
+    `
+  })
+);
+sky.frustumCulled = false;
+sky.renderOrder = -1;
+scene.add(sky);
 let renderer;
 try {
   renderer = new THREE.WebGLRenderer({ canvas, antialias: !isTouch, powerPreference: "high-performance" });
@@ -140,9 +201,9 @@ for(const [material,color,wood] of [
   material.color.set(0xffffff);material.map=textileTexture(color,wood);
   material.bumpMap=material.map;material.bumpScale=wood ? .016 : .009;
 }
-scene.add(new THREE.HemisphereLight(0xf1e8d5, 0x554b43, 1.35));
-const sunlight = new THREE.DirectionalLight(0xffe1af, 2.4);
-sunlight.position.set(-18, 28, 42); scene.add(sunlight);
+scene.add(new THREE.HemisphereLight(0xffd6b0, 0x6c4c4b, 1.4));
+const sunlight = new THREE.DirectionalLight(0xffbd79, 2.35);
+sunlight.position.set(34, 17, 10); scene.add(sunlight);
 sunlight.castShadow = true;
 sunlight.shadow.mapSize.set(1024, 1024);
 sunlight.shadow.camera.left = -35; sunlight.shadow.camera.right = 35;
@@ -1100,6 +1161,8 @@ window.addEventListener("resize",()=>{camera.aspect=innerWidth/innerHeight;camer
 function animate() {
   requestAnimationFrame(animate);
   const dt=Math.min(clock.getDelta(),.055);
+  skyUniforms.uTime.value=clock.elapsedTime;
+  sky.position.copy(camera.position);
   if (started&&!isOverlayOpen()) {
     yaw+=(Number(keys.has("KeyJ"))-Number(keys.has("KeyL")))*1.8*dt;
     pitch=Math.max(-1.25,Math.min(1.25,pitch+(Number(keys.has("KeyI"))-Number(keys.has("KeyK")))*1.5*dt));
