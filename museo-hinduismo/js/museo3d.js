@@ -324,6 +324,7 @@ function foundersDisplay() {
   const group = new THREE.Group();
   group.position.set(8.55, 3, 25);
   group.rotation.y = -Math.PI / 2;
+  group.scale.setScalar(.7);
   const addBox = (w, h, d, x, y, z, material) => {
     const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
     mesh.position.set(x, y, z); group.add(mesh);
