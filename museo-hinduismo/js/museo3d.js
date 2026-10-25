@@ -299,6 +299,52 @@ function sign(text, x, y, z, w, h, rotation = 0) {
   const mesh = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ map: makeTextTexture(text,"#421d1a","#efc16b",w/h), side: THREE.FrontSide }));
   mesh.position.set(x,y,z); mesh.rotation.y = rotation; scene.add(mesh); return mesh;
 }
+function foundersPlaqueTexture(text, heading = false) {
+  const canvas = document.createElement("canvas");
+  canvas.width = 1600; canvas.height = 240;
+  const ctx = canvas.getContext("2d");
+  const gold = ctx.createLinearGradient(0, 0, 0, canvas.height);
+  gold.addColorStop(0, "#fff0ae"); gold.addColorStop(.48, "#d5a747"); gold.addColorStop(1, "#9b6927");
+  ctx.fillStyle = gold; ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.strokeStyle = "#fff4c6"; ctx.lineWidth = 7;
+  ctx.strokeRect(11, 11, canvas.width - 22, canvas.height - 22);
+  ctx.strokeStyle = "#714820"; ctx.lineWidth = 3;
+  ctx.strokeRect(23, 23, canvas.width - 46, canvas.height - 46);
+  let size = heading ? 76 : 112;
+  ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillStyle = "#3d2417";
+  do { ctx.font = `bold ${size}px Georgia, serif`; size -= 2; }
+  while (ctx.measureText(text).width > canvas.width - 110 && size > 40);
+  ctx.fillText(text, canvas.width / 2, canvas.height / 2 + 4);
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  return texture;
+}
+function foundersDisplay() {
+  // On the right-hand wall when entering the vestibule from the garden.
+  const group = new THREE.Group();
+  group.position.set(8.55, 3, 25);
+  group.rotation.y = -Math.PI / 2;
+  const addBox = (w, h, d, x, y, z, material) => {
+    const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
+    mesh.position.set(x, y, z); group.add(mesh);
+  };
+  addBox(7.8, 2.88, .14, 0, 0, 0, mat.bronzeDark);
+  addBox(7.58, 2.66, .15, 0, 0, .03, mat.bronze);
+  addBox(7.38, 2.46, .16, 0, 0, .07, mat.wood);
+  const plate = (text, x, y, w, h, heading = false) => {
+    addBox(w + .09, h + .09, .07, x, y, .18, mat.bronzeDark);
+    const mesh = new THREE.Mesh(new THREE.PlaneGeometry(w, h),
+      new THREE.MeshBasicMaterial({ map: foundersPlaqueTexture(text, heading) }));
+    mesh.position.set(x, y, .225); group.add(mesh);
+  };
+  plate("EN AGRADECIMIENTO A NUESTROS FUNDADORES", 0, 1.02, 6.85, .51, true);
+  plate("PAULINA TRUJILLO", -1.76, .36, 3.22, .47);
+  plate("JOSE MARIA HERNANDEZ", 1.76, .36, 3.22, .47);
+  plate("LASZLO PALOVITS", 0, -.34, 3.8, .57);
+  plate("CONSTANZA GARCIA", -1.76, -1.03, 3.22, .47);
+  plate("ANTONIO RAMOS", 1.76, -1.03, 3.22, .47);
+  scene.add(group);
+}
 function lamp(x, z, y = 4.6) {
   const light = new THREE.PointLight(0xffc778, 12, 12, 2);
   light.position.set(x, y, z); scene.add(light);
@@ -630,6 +676,7 @@ function buildShell() {
   wallZ(18,-4,-2.6); wallZ(18,2.6,4);
   wallZ(-37,-4,-2.6); wallZ(-37,2.6,4);
   sign("LAS SALAS DEL HINDUISMO",0,4.86,16.7,5.2,.64,Math.PI);
+  foundersDisplay();
   const mandala = new THREE.Group();
   for (const radius of [1.1,1.65,2.2]) {
     const ring = new THREE.Mesh(new THREE.TorusGeometry(radius,.045,8,80),mat.bronze);
