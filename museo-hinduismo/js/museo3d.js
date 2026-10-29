@@ -343,7 +343,7 @@ function foundersDisplay() {
   plate("JOSE MARIA HERNANDEZ", 1.76, .36, 3.22, .47);
   plate("LASZLO PALOVITS", 0, -.34, 3.8, .57);
   plate("CONSTANZA GARCIA", -1.76, -1.03, 3.22, .47);
-  plate("ANTONIO RAMOS", 1.76, -1.03, 3.22, .47);
+  plate("ANTONIO SUÁREZ", 1.76, -1.03, 3.22, .47);
   scene.add(group);
 }
 function lamp(x, z, y = 4.6) {
